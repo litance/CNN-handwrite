@@ -137,9 +137,9 @@ def evaluate(test_data, net):
 #Main
 def main():
     net = CNN().to(device)
-    if os.path.exists("mnist_cnn.pth"):
-        net.load_state_dict(torch.load("mnist_cnn.pth"))
-        print("Model loaded from mnist_cnn.pth")
+    if os.path.exists("cnn.pth"):
+        net.load_state_dict(torch.load("cnn.pth"))
+        print("Model loaded from cnn.pth")
     else:
         train_data = get_data_loader(is_train=True)
         test_data = get_data_loader(is_train=False)
@@ -164,8 +164,8 @@ def main():
             if accuracy > 0.97:
                 print("Stopping early: High accuracy achieved.")
                 break
-        torch.save(net.state_dict(), "mnist_cnn.pth")
-        print("Model saved as mnist_cnn.pth")
+        torch.save(net.state_dict(), "cnn.pth")
+        print("Model saved as cnn.pth")
 
     create_handwriting_panel(net)
 
