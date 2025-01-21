@@ -1,7 +1,7 @@
 # CNN-handwrite
 ## 基于Python的CNN卷积神经网络构成的简易手写数字识别<br/>Simple handwritten digit recognition based on Python CNN simple neural network
 
-### 所需要第三方库 Third-party libraries needed to run this programm
+### 所需要第三方库 Third-party libraries needed to run this program
 
 - tkinter
 
@@ -59,6 +59,6 @@ Stop early(line:164)
 if accuracy > 0.97:
 ```
 
-## 3.运行 Run this programm
+## 3.运行 Run this program
 
 
